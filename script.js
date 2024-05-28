@@ -64,14 +64,12 @@ function gatherResources() {
 }
 
 function checkFood() {
-    if (citizens > 0) {
-        if (food > 0) {
-            food--;
-        } else {
-            citizens--;
-        }
-        updateDisplay();
+    if (food > 0) {
+        food--;
+    } else if (citizens > 0) {
+        citizens--;
     }
+    updateDisplay();
 }
 
 function updateDisplay() {
