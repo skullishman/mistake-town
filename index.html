@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistake Village Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Mistake Village</h1>
+        <button id="clickMistake">Make a Mistake</button>
+        <p>Mistakes: <span id="mistakes">0</span></p>
+        <p>Mistake Citizens: <span id="citizens">0</span></p>
+
+        <div id="resources">
+            <h2>Resources</h2>
+            <p>Stone: <span id="stone">0</span></p>
+            <p>Wood: <span id="wood">0</span></p>
+            <p>Food: <span id="food">0</span></p>
+        </div>
+
+        <div id="jobs">
+            <h2>Jobs</h2>
+            <button class="assignJob" data-job="stoneMiner">Assign to Stone Mining</button>
+            <button class="assignJob" data-job="woodCutter">Assign to Wood Cutting</button>
+            <p>Stone Miners: <span id="stoneMiners">0</span></p>
+            <p>Wood Cutters: <span id="woodCutters">0</span></p>
+        </div>
+
+        <div id="foodSection">
+            <h2>Food Gathering</h2>
+            <button id="clickFood">Gather Food</button>
+        </div>
+
+        <div id="toolUpgrade">
+            <h2>Tool Upgrade</h2>
+            <button id="upgradeTools">Upgrade Tools (Cost: <span id="toolCost">100</span> Wood & Stone)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
